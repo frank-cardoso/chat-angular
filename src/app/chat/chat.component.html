@@ -1,0 +1,13 @@
+<div class="chat-container">
+  <h2>Atendimento on-line</h2>
+  <div class="chat-box">
+    <div *ngFor="let msg of messages" [ngClass]="msg.role">
+      <strong>{{ msg.role === 'atendente' ? 'Atendente diz:' : 'Você diz:' }}</strong>
+      <p>{{ msg.text }}</p>
+    </div>
+  </div>
+  <div class="input-box">
+    <input [(ngModel)]="messageText" (keypress)="onKeyPress($event)" placeholder="Digite sua mensagem...">
+    <button (click)="sendMessage()">ENVIAR</button>
+  </div>
+</div>

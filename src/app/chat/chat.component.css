@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+} 
+
+.chat-container {
+  width: 350px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 12px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+h2 {
+  font-size: 20px;
+  color: #6a5acd;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  height: 400px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.chatbox .message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius:8px;
+  position: relative;
+}
+
+.atendente {
+  background-color: #f0f0f0;
+  border-left: 5px solid #6a5acd;
+  padding-left: 10px;
+}
+
+.usuario {
+  background-color: #d4f4dd;
+  text-align: right;
+  border-right: 5px solid #28a745;
+  padding-right: 10px;
+}
+
+.input-box {
+  display: flex;
+  margin-top: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #6a5acd;
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #6a5acd;
+  color: #fff;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5a4cb2;
+}
+
